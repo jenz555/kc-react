@@ -1,0 +1,12 @@
+.btn--download {
+    width: 40%;
+}
+
+//----------------------------------------------------
+// Media Queries
+//----------------------------------------------------
+@media (max-width: $breakpoint-medium) {
+    .btn--download {
+       margin: 0 auto;
+    }  
+}

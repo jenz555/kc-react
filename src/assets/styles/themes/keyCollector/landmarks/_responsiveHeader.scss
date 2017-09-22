@@ -1,0 +1,28 @@
+// // ------------------------------------
+// // Header
+// // -----------------------------------
+
+.responsive__header {
+    //@include radial-gradient($blue-8,$blue-9);
+    background-color: $dark-blue;
+    padding: .5rem 1.25rem;
+
+}
+
+.responsive__header--divider {
+    border-right: 1px solid $blue-3;
+}
+
+.hamburger__container {
+    border: 1px solid $blue-1;
+}
+
+.header__logo {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    display: inline-block;
+    background-image: url(/build/images/key.43e7421688cc64fc60a60d7dffaf6ecc.png);
+    width: 3.75rem;
+    height: 3.75rem;
+}

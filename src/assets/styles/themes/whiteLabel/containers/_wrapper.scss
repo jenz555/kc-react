@@ -1,0 +1,33 @@
+
+ 
+.wrapper {
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    position: relative;
+    @include borderBox();
+}
+
+
+.wrapper--white {
+    background-color: $white;
+    
+}
+
+.wrapper--white {
+    background-color: $white;
+    
+}
+
+
+
+//----------------------------------------------------
+// Media Queries
+//----------------------------------------------------
+@media (min-width: $breakpoint-large) {
+    .wrapper {
+        max-width: $site-width;
+        margin: 0 auto;
+        padding: 0;
+    }    
+}

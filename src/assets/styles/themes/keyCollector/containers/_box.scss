@@ -1,0 +1,17 @@
+
+.box--rounded {
+  @include border-radius(4px);
+}
+
+.box--purple {
+  @include radial-gradient($violet-1, $blue-1);
+}
+
+.box--dkBlue {
+  background-image: url(/build/images/key.f51570ef6b85c233e3cc1722a86c5e73.jpg);
+}
+
+
+.box--blue {
+  background-color: $blue-1;
+}

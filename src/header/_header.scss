@@ -1,0 +1,14 @@
+.responsive__header {
+    background-color: transparent;
+    background-image: url('./header/appBackground_2.png');
+    top: 0;
+    left: 0;
+    z-index: $zIndex-2;
+ 
+}
+
+.hamburger__container {
+    z-index: $zIndex-3;
+    opacity: 1!important;
+    border: none;
+}

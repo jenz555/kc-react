@@ -1,0 +1,16 @@
+.hero {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-image: url('./hero/appBackground_2.png');
+    padding: 1rem 0;
+    text-align: center;
+    background-position-y: 6%;
+    z-index: $zIndex-1;
+    padding-top: 2rem;
+}
+
+.hero__logoText {
+    width: 400px;
+    text-align: center;
+}
