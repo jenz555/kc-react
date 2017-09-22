@@ -53,9 +53,9 @@ class Header extends React.Component {
             <nav role="navigation">
               <ul className="vList vList--piped navMenu--vert">
 
-                <li><a className="txt nav__link nav--inpage--item" data-target="#section--1|-40">What is a Key Issue?</a></li>
-                <li><a className="txt nav__link nav--inpage--item" data-target="#section--2|-40">Explore the App</a></li>
-                <li><a className="txt nav__link nav--inpage--item" data-target="#section--3|-40">Contact</a></li>
+                <li><a href='#section1' className="txt nav__link nav--inpage--item">What is a Key Issue?</a></li>
+                <li><a href='#section2' className="txt nav__link nav--inpage--item">Explore the App</a></li>
+                <li><a href='#section3' className="txt nav__link nav--inpage--item">Contact</a></li>
               </ul>
             </nav>
           </div>

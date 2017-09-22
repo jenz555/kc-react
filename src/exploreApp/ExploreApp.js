@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor'
 import infinite from './searchScreen_phone.png';
 import awareness from './awareness_phone.png';
 
@@ -6,7 +7,8 @@ import awareness from './awareness_phone.png';
 class ExploreApp extends Component {
     render() {
         return (
-            <section id="section--2">
+            <ScrollableAnchor id={'section2'}>
+            <section>
                 <div className="isHidden isVisible--medium">
 
 
@@ -215,6 +217,7 @@ class ExploreApp extends Component {
                 </div>
 
             </section>
+            </ScrollableAnchor>
 
         );
     }

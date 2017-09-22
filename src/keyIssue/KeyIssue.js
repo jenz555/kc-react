@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 class KeyIssue extends Component {
     render() {
         return (
-            
-            <section id="section--1">
+            <ScrollableAnchor id={'section1'}>
+            <section className="keyIssue">
                  <div className="isHidden isVisible--medium">
                 <div className="wrapper wrapper--white">
                     
@@ -160,6 +161,7 @@ One of the biggest problems facing collectors today is identifying and finding t
 
                     </div>
             </section>
+            </ScrollableAnchor>
 
         );
     }

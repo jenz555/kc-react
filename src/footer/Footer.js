@@ -23,9 +23,15 @@ class Footer extends Component {
                
               </ul>
               <ul className="hList">
+              <a href="https://www.instagram.com/keycollectorcomics/" target="_blank">
                 <li className="fa fa-instagram fa-inverse fa-3x"></li>
+                </a>
+                <a href="https://twitter.com/key_collect" target="_blank">
                 <li className="fa fa-twitter  fa-inverse fa-3x"></li>
+                </a>
+                <a href="https://www.facebook.com/keycollector/" target="_blank">
                 <li className="fa fa-facebook fa-inverse fa-3x"></li>
+                </a>
               </ul>
             </nav>
           </div>
