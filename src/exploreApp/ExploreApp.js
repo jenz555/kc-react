@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor'
-import infinite from './searchScreen_phone.png';
+import sensory from './extraSensory_phone.png';
 import awareness from './awareness_phone.png';
+import timeTraveler from './timeTraveler_phone.png';
+import strategist from './strategist_phone.png';
 
 
 class ExploreApp extends Component {
@@ -35,7 +37,7 @@ class ExploreApp extends Component {
                                     <div className="grid__col grid__col--4of12--medium txt--align-right">
                                         <div className="relative">
                                             <div className="phoneImgRight">
-                                                <img src={infinite} />
+                                                <img src={sensory} />
                                             </div>
                                         </div>
                                     </div>
@@ -55,7 +57,7 @@ class ExploreApp extends Component {
 
                                         <div className="relative">
                                             <div className="phoneImgLeft">
-                                                <img src={infinite} />
+                                                <img src={awareness} />
                                             </div>
                                         </div>
 
@@ -92,7 +94,7 @@ class ExploreApp extends Component {
                                     <div className="grid__col grid__col--4of12--medium txt--align-right">
                                         <div className="relative">
                                             <div className="phoneImgRight">
-                                                <img src={infinite} />
+                                                <img src={timeTraveler} />
                                             </div>
                                         </div>
                                     </div>
@@ -112,7 +114,7 @@ class ExploreApp extends Component {
 
                                         <div className="relative">
                                             <div className="phoneImgLeft">
-                                                <img src={infinite} />
+                                                <img src={strategist} />
                                             </div>
                                         </div>
 
@@ -150,7 +152,7 @@ class ExploreApp extends Component {
                                     <div className="grid__col grid__col--4of12--medium txt--align-right">
                                         <div className="relative">
                                             <div className="phoneImgRight">
-                                                <img src={infinite} />
+                                                <img src={awareness} />
                                             </div>
                                         </div>
                                     </div>
@@ -187,7 +189,7 @@ class ExploreApp extends Component {
                                     <div className="grid__col grid__col--4of12--medium txt--align-center">
 
 
-                                        <img src={infinite} />
+                                        <img src={sensory} />
 
                                     </div>
 
@@ -214,7 +216,7 @@ class ExploreApp extends Component {
                                     <div className="grid__col grid__col--4of12--medium txt--align-center">
 
 
-                                        <img src={infinite} />
+                                        <img src={awareness} />
 
                                     </div>
 
@@ -238,7 +240,7 @@ class ExploreApp extends Component {
                                     <div className="grid__col grid__col--4of12--medium txt--align-center">
 
 
-                                        <img src={infinite} />
+                                        <img src={timeTraveler} />
 
                                     </div>
 
@@ -263,7 +265,7 @@ class ExploreApp extends Component {
                                     <div className="grid__col grid__col--4of12--medium txt--align-center">
 
 
-                                        <img src={infinite} />
+                                        <img src={awareness} />
 
                                     </div>
 
@@ -287,7 +289,7 @@ class ExploreApp extends Component {
                                     <div className="grid__col grid__col--4of12--medium txt--align-center">
 
 
-                                        <img src={infinite} />
+                                        <img src={awareness} />
 
                                     </div>
 

@@ -4,7 +4,7 @@ import Header from './header/Header';
 import Hero from './hero/Hero';
 import Intro from './intro/Intro';
 import Nav from './nav/Nav';
-import KeyIssue from './keyIssue/KeyIssue';
+import Carousel from './carousel/Carousel';
 import ExploreApp from './exploreApp/ExploreApp';
 import Contact from './contact/Contact';
 import Footer from './footer/Footer';
@@ -31,8 +31,10 @@ class App extends Component {
       <Header></Header>
         <Hero></Hero>
         <Intro></Intro>
+        <hr/>
         {/* <Nav></Nav> */}
-        <KeyIssue></KeyIssue>
+        <Carousel></Carousel>
+        <hr/>
         <ExploreApp></ExploreApp>
         <Contact></Contact>
         <Footer></Footer>
