@@ -8,16 +8,18 @@
     @include borderBox();
 }
 
+.wrapper--x2 {
+
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
 
 .wrapper--white {
     background-color: $white;
     
 }
 
-.wrapper--white {
-    background-color: $white;
-    
-}
 
 
 
@@ -28,6 +30,6 @@
     .wrapper {
         max-width: $site-width;
         margin: 0 auto;
-        padding: 0;
+      
     }    
 }

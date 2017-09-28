@@ -1,3 +1,24 @@
+.phoneImgRight,
+.phoneImgLeft {
+  img {
+    max-width: none;
+    height: auto;
+}
+
+}
+
+.phoneImgRight {
+  top: -130px;
+  left: 30%;
+
+}
+
+.phoneImgLeft {
+  top: -63px;
+  left: 0;
+
+}
+
 .box--dkBlue {
     background-image: url('./exploreApp/exploreApp_bkg.jpg');
   }
@@ -5,4 +26,96 @@
   .wrapper__phone {
     text-align: center;
 
+}
+
+.slant--large {
+  height: 440px;
+}
+
+.slant--small {
+  height: 250px;
+}
+
+.slant {
+  position: relative;
+  z-index: 1;
+  height: 440px;
+
+  &:before,
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; // for Chrome Windows
   }
+
+  &:before {
+    top: 0;
+
+
+  }
+  
+  &:after {
+    bottom: 0;
+  }
+}
+
+
+// slanted edges here
+.slant--right {
+
+  &:before {
+    transform: skewY(1.5deg);
+    transform-origin: 100% 0;
+
+  }
+  
+  &:after {
+    transform: skewY(-1.5deg);
+    transform-origin: 100%;
+  }
+}
+
+.slant--left {
+  &:before {
+    transform: skewY(-1.5deg);
+    transform-origin: 0 100%;
+
+  }
+  
+  &:after {
+    transform: skewY(1.5deg);
+    transform-origin: 0;
+  }
+}
+
+.slant--ltBlue {
+  background-color: #2e70b6;
+}
+
+.slant--dkBlue {
+  background-color: #1e2e5d
+}
+
+.slant--white {
+  background-color: $white;
+  height: 5rem;
+}
+
+// ----------------------------------------------------
+// Media Queries
+// ----------------------------------------------------
+@media (max-width: $breakpoint-medium) {
+  
+  .slant {
+    position: relative;
+    z-index: 1;
+    height: initial;
+  }
+  
+}

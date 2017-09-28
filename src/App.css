@@ -111,6 +111,9 @@
 .border--thick {
   border: 2px solid #333333; }
 
+.border--bottom {
+  border-bottom: 1px solid #333333; }
+
 .padding--x1 {
   padding: 1rem; }
 
@@ -170,6 +173,12 @@
 
 .pl--x1 {
   padding-left: 1rem; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -318,6 +327,12 @@ img {
 
 button {
   cursor: pointer; }
+
+@media (max-width: 48em) {
+  h1 {
+    font-size: 1.7rem; }
+  h2 {
+    font-size: 1.5rem; } }
 
 .page {
   display: -webkit-box;
@@ -2550,8 +2565,9 @@ input.option__input[type=checkbox]:disabled:checked + input[type='hidden'] + .op
   -ms-box-sizing: border-box;
   box-sizing: border-box; }
 
-.wrapper--white {
-  background-color: #ffffff; }
+.wrapper--x2 {
+  padding-right: 2rem;
+  padding-left: 2rem; }
 
 .wrapper--white {
   background-color: #ffffff; }
@@ -2559,8 +2575,7 @@ input.option__input[type=checkbox]:disabled:checked + input[type='hidden'] + .op
 @media (min-width: 64rem) {
   .wrapper {
     max-width: 64rem;
-    margin: 0 auto;
-    padding: 0; } }
+    margin: 0 auto; } }
 
 svg:not(:root) {
   overflow: hidden; }
@@ -3093,6 +3108,15 @@ a:visited.nav__link {
 
 .vr--x5 {
   margin-bottom: 5rem; }
+
+.vr--x6 {
+  margin-bottom: 6rem; }
+
+.vr--x7 {
+  margin-bottom: 7rem; }
+
+.vr--x8 {
+  margin-bottom: 8rem; }
 
 .affix {
   width: 100%;
@@ -6113,8 +6137,7 @@ this cell in mobile view*/
   animation-name: slideOutUp; }
 
 .responsive__header {
-  background-color: transparent;
-  background-image: url("./header/appBackground_2.png");
+  background-color: #03060f;
   top: 0;
   left: 0;
   z-index: 200; }
@@ -6124,26 +6147,213 @@ this cell in mobile view*/
   opacity: 1 !important;
   border: none; }
 
+.navMenu--vert {
+  background-color: #28568e; }
+
+.navMenu--list {
+  padding: 1rem; }
+
+.vList--piped > * + * {
+  border-top: 1px solid #ffffff; }
+
+@media (max-width: 48em) {
+  .responsive__header {
+    background-position-x: 46%; } }
+
 .hero {
   width: 100%;
-  height: 300px;
   position: relative;
-  background-image: url("./hero/appBackground_2.png");
+  background-color: #03060f;
   padding: 1rem 0;
-  text-align: center;
-  background-position-y: 6%;
+  background-position-y: 46%;
   z-index: 100;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  height: 349px; }
 
-.hero__logoText {
-  width: 400px;
-  text-align: center; }
+.hero__title {
+  font-size: 4rem;
+  line-height: 1; }
+
+.hero__content {
+  width: 67%;
+  z-index: 300; }
+
+.heroMan__container {
+  position: relative; }
+
+.heroMan img,
+.heroManKey img {
+  max-width: none;
+  height: auto; }
+
+.heroMan {
+  position: absolute;
+  left: -59.5%;
+  top: -611.4%; }
+
+.heroManKey {
+  position: absolute;
+  opacity: 0;
+  left: -13.2px;
+  top: 346.6%;
+  -webkit-animation: fadeIn 2s forwards;
+  -moz-animation: fadeIn 2s forwards;
+  -ms-animation: fadeIn 2s forwards;
+  -o-animation: fadeIn 2s forwards;
+  animation: fadeIn 2s forwards;
+  -webkit-animation-delay: 1s;
+  -moz-animationn-delay: 1s;
+  -ms-animationn-delay: 1s;
+  -o-animationn-delay: 1s;
+  animation-delay: 1s; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: none; }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: none; }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+@-ms-keyframes fadeIn {
+  .heroManKey from {
+    opacity: 0;
+    transform: none; }
+  .heroManKey to {
+    opacity: 1;
+    transform: none; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: none; }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+.heroMan--small,
+.heroManKey--small {
+  display: inline; }
+  .heroMan--small img,
+  .heroManKey--small img {
+    width: 50%; }
+
+.heroManKey--small {
+  position: absolute;
+  width: 43.3%;
+  left: 28.1%;
+  top: 37.4%; }
+
+@media (max-width: 48em) {
+  .hero {
+    padding-top: 1rem;
+    padding-bottom: 0;
+    height: 100%; }
+  .heroMan__container {
+    text-align: center; }
+  .hero__title {
+    font-size: 3rem; }
+  .hero__content {
+    font-size: 1.8rem;
+    width: 100%; } }
+
+@media (max-width: 925px) {
+  .hero__content {
+    font-size: 2rem;
+    width: 77%; }
+  .heroMan {
+    top: -617.6%;
+    left: -84.4px; }
+  .heroManKey {
+    left: 52.6px;
+    top: 318.3%; } }
+
+@media (max-width: 825px) {
+  .heroManKey {
+    left: 52.6px;
+    top: 318.3%; } }
+
+@media (max-width: 770px) {
+  .hero__title {
+    font-size: 3rem; } }
+
+@media (max-width: 48em) {
+  .hero {
+    padding-top: 1rem;
+    padding-bottom: 0;
+    height: 100%; }
+  .heroMan__container {
+    text-align: center; }
+  .hero__title {
+    font-size: 3rem; }
+  .hero__content {
+    font-size: 1.8rem;
+    width: 100%; } }
 
 .txt--intro {
   line-height: 1.5; }
 
-.btn--download {
-  width: 40%; }
+.intro {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid #E47608; }
+
+.intro--batgirl {
+  height: 240px;
+  bottom: 0;
+  position: absolute;
+  z-index: 300;
+  right: 0; }
+
+.intro--spiderman {
+  height: 227px;
+  bottom: 0;
+  position: absolute;
+  z-index: 300;
+  left: 69px;
+  bottom: -226px; }
+
+@media (max-width: 48em) {
+  .intro--batgirl {
+    height: 200px;
+    position: relative;
+    margin-bottom: -7px; }
+  .intro--spiderman {
+    height: 227px;
+    bottom: 0;
+    position: absolute;
+    z-index: 300;
+    left: 63%;
+    bottom: -1000px; }
+  .border--bottom {
+    border-bottom: 1px solid #ccc; } }
+
+@media (max-width: 845px) {
+  .intro h1 {
+    font-size: 1.8rem; } }
+
+@media (max-width: 525px) {
+  .intro--spiderman {
+    height: 163px;
+    bottom: 0;
+    position: absolute;
+    z-index: 300;
+    left: 62%;
+    bottom: -1000px; } }
+
+.btn--download img {
+  max-width: none;
+  height: auto;
+  width: 200px; }
 
 @media (max-width: 48em) {
   .btn--download {
@@ -6178,11 +6388,81 @@ this cell in mobile view*/
   padding: 1rem;
   background-image: url("./keyIssue/comicBook_bkg_1.jpg"); }
 
+.phoneImgRight img,
+.phoneImgLeft img {
+  max-width: none;
+  height: auto; }
+
+.phoneImgRight {
+  top: -130px;
+  left: 30%; }
+
+.phoneImgLeft {
+  top: -63px;
+  left: 0; }
+
 .box--dkBlue {
   background-image: url("./exploreApp/exploreApp_bkg.jpg"); }
 
 .wrapper__phone {
   text-align: center; }
+
+.slant--large {
+  height: 440px; }
+
+.slant--small {
+  height: 250px; }
+
+.slant {
+  position: relative;
+  z-index: 1;
+  height: 440px; }
+  .slant:before, .slant:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden; }
+  .slant:before {
+    top: 0; }
+  .slant:after {
+    bottom: 0; }
+
+.slant--right:before {
+  transform: skewY(1.5deg);
+  transform-origin: 100% 0; }
+
+.slant--right:after {
+  transform: skewY(-1.5deg);
+  transform-origin: 100%; }
+
+.slant--left:before {
+  transform: skewY(-1.5deg);
+  transform-origin: 0 100%; }
+
+.slant--left:after {
+  transform: skewY(1.5deg);
+  transform-origin: 0; }
+
+.slant--ltBlue {
+  background-color: #2e70b6; }
+
+.slant--dkBlue {
+  background-color: #1e2e5d; }
+
+.slant--white {
+  background-color: #ffffff;
+  height: 5rem; }
+
+@media (max-width: 48em) {
+  .slant {
+    position: relative;
+    z-index: 1;
+    height: initial; } }
 
 .input--textarea {
   width: 100%; }
@@ -6333,7 +6613,7 @@ fieldset {
   color: #888; }
 
 .box--blue {
-  background-color: #0065b1; }
+  background-color: #000d1a; }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

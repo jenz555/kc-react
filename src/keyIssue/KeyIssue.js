@@ -5,7 +5,7 @@ class KeyIssue extends Component {
     render() {
         return (
             <ScrollableAnchor id={'section1'}>
-            <section className="keyIssue">
+            <section className="keyIssue vr--x2">
                  <div className="isHidden isVisible--medium">
                 <div className="wrapper wrapper--white">
                     
@@ -80,7 +80,7 @@ One of the biggest problems facing collectors today is identifying and finding t
                 <div className="wrapper wrapper--white">
                     
                     <div className="box box--x2">
-                    <div className="txt txt--size-36 txt--color-brand--6 txt--weight-semibold vr txt--color-blue">What is a Key Issue?</div>
+                    <h1 className="txt txt--weight-semibold vr txt--color-blue">What is a Key Issue?</h1>
                     <h4 className="vr">Since 1934, over 1 million individual comic book issues have been published. Less than 1% of that number is considered a "key issue".
 
 One of the biggest problems facing collectors today is identifying and finding these highly sought after comics. Even expert collector's find it challenging to remember each and every key plus the pricing based on condition.</h4>

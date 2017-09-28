@@ -1,6 +1,7 @@
 .responsive__header {
-    background-color: transparent;
-    background-image: url('./header/appBackground_2.png');
+    background-color: #03060f;
+   //background-image: url('./hero/appBackground_4.jpg');
+   // background-image: url('./hero/appBackground_4.jpg');
     top: 0;
     left: 0;
     z-index: $zIndex-2;
@@ -11,4 +12,26 @@
     z-index: $zIndex-3;
     opacity: 1!important;
     border: none;
+}
+
+.navMenu--vert {
+    background-color: #28568e;
+}
+
+.navMenu--list {
+    padding: 1rem;
+}
+
+.vList--piped > * + * {
+    border-top: 1px solid $white;
+
+}
+
+//----------------------------------------------------
+// Media Queries
+//----------------------------------------------------
+@media (max-width: $breakpoint-medium) {
+    .responsive__header{
+        background-position-x: 46%;
+    }
 }

@@ -11,11 +11,21 @@ import Footer from './footer/Footer';
 import './App.css';
 
 var ReactGA = require('react-ga');
-ReactGA.initialize('UA-106909493-1');
-
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      someData: null,
+    };
+
+    ReactGA.initialize('UA-106838773-1');
+
+    ReactGA.pageview(window.location.pathname);
+  }
   render() {
+
+  
     return (
       <div className="animated fadeIn">
       <Header></Header>

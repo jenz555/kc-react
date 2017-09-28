@@ -14,6 +14,7 @@ class Header extends React.Component {
     const el = findDOMNode(this.refs.toggle);
     $(el).slideToggle();
     $(el).removeClass("nav--hide");
+    
   };
 
 
@@ -38,7 +39,7 @@ class Header extends React.Component {
             <nav role="navigation">
              <ul id="toggle-nav-1" className="header__mobileUtil">
               <li>
-                <button className="hamburger__container"  onClick={this.handleToggle}>
+                <button className="hamburger__container"  ref="hamburger" onClick={this.handleToggle}>
                 <span id="hamburger-1" className="hamburger__navicon"></span>Menu
                 </button>
               </li>
@@ -49,9 +50,9 @@ class Header extends React.Component {
       {/* <!--Vertical Navigation List --> */}
   
         <div id="navMenu" >
-          <div id="navMenu-vert-1" className="togglePanel nav--hide" ref="toggle">
+          <div className="navMenu--vert nav--hide" ref="toggle">
             <nav role="navigation">
-              <ul className="vList vList--piped navMenu--vert">
+              <ul className="vList vList--piped navMenu--list">
 
                 <li><a href='#section1' className="txt nav__link nav--inpage--item">What is a Key Issue?</a></li>
                 <li><a href='#section2' className="txt nav__link nav--inpage--item">Explore the App</a></li>

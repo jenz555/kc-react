@@ -1,5 +1,10 @@
 .btn--download {
-    width: 40%;
+   
+    img {
+        max-width: none;
+        height: auto;
+        width: 200px;
+    }
 }
 
 //----------------------------------------------------
