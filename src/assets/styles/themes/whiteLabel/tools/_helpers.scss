@@ -11,6 +11,9 @@
     border: 2px solid $gray-6;
 }
 
+.border--bottom {
+    border-bottom: 1px solid $gray-6;
+}
 
 //-----------------------------------------------------------------------------
 // Apply padding to element
@@ -86,4 +89,12 @@
 .pl--x1 {
     padding-left: 1rem;
    
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
 }

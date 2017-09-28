@@ -108,6 +108,9 @@
 .border--thick {
   border: 2px solid #333333; }
 
+.border--bottom {
+  border-bottom: 1px solid #333333; }
+
 .padding--x1 {
   padding: 1rem; }
 
@@ -167,6 +170,12 @@
 
 .pl--x1 {
   padding-left: 1rem; }
+
+.relative {
+  position: relative; }
+
+.absolute {
+  position: absolute; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -315,6 +324,12 @@ img {
 
 button {
   cursor: pointer; }
+
+@media (max-width: 48em) {
+  h1 {
+    font-size: 1.7rem; }
+  h2 {
+    font-size: 1.5rem; } }
 
 .page {
   display: -webkit-box;
@@ -2547,8 +2562,9 @@ input.option__input[type=checkbox]:disabled:checked + input[type='hidden'] + .op
   -ms-box-sizing: border-box;
   box-sizing: border-box; }
 
-.wrapper--white {
-  background-color: #ffffff; }
+.wrapper--x2 {
+  padding-right: 2rem;
+  padding-left: 2rem; }
 
 .wrapper--white {
   background-color: #ffffff; }
@@ -2556,8 +2572,7 @@ input.option__input[type=checkbox]:disabled:checked + input[type='hidden'] + .op
 @media (min-width: 64rem) {
   .wrapper {
     max-width: 64rem;
-    margin: 0 auto;
-    padding: 0; } }
+    margin: 0 auto; } }
 
 svg:not(:root) {
   overflow: hidden; }
@@ -3090,6 +3105,15 @@ a:visited.nav__link {
 
 .vr--x5 {
   margin-bottom: 5rem; }
+
+.vr--x6 {
+  margin-bottom: 6rem; }
+
+.vr--x7 {
+  margin-bottom: 7rem; }
+
+.vr--x8 {
+  margin-bottom: 8rem; }
 
 .affix {
   width: 100%;

@@ -114,3 +114,17 @@ img {
 button {
     cursor:pointer;
 }
+
+
+//----------------------------------------------------
+// Media Queries
+//----------------------------------------------------
+@media (max-width: $breakpoint-medium) {
+    h1 {
+        font-size: 1.7rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+
+}

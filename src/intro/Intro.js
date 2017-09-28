@@ -6,12 +6,58 @@ import DownloadBtn from '.././downloadBtn/DownloadBtn';
 class Intro extends Component {
   render() {
     return (
-      <div>
+      <div className="intro--bkg">
         <div className="isHidden isVisible--medium">
+
+
+          <div className="wrapper vr">
+            <div className="grid grid--centered grid--middle">
+              <div className="grid__col grid__col--8of12--medium">
+
+                <h2 className="vr txt--weight-semibold txt--color-blue">Welcome to the origin of a better comic book collecting experience.</h2>
+                <h3 className="vr txt--intro">The Key Collector Comic App has everything a comic book collector could ever want to build a legendary collection.</h3>
+                <DownloadBtn></DownloadBtn>
+                {/* <ul className="hList">
+
+                  <li> <DownloadBtn></DownloadBtn></li>
+                  <li> <DownloadBtn></DownloadBtn></li>
+
+                </ul> */}
+
+              </div>
+              <div className="grid__col grid__col--4of12--medium txt--align-right">
+                <img src={introPhone} />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="isHidden--medium">
+
+          <div className="wrapper txt--align-center border--bottom vr">
+
+          </div>
+          <div className="wrapper vr">
+            <div className="grid grid--centered grid--middle ">
+              <div className="grid__col grid__col--8of12--medium">
+                <h2 className="vr txt--align-center txt--align-center txt--weight-semibold txt--color-blue">Welcome to the origin of a better comic book collecting experience.</h2>
+                <h3 className="vr txt--intro  txt--align-center">The Key Collector Comic App has everything a comic book collector could ever want to build a legendary collection.</h3>
+                <DownloadBtn></DownloadBtn>
+              </div>
+              <div className="grid__col grid__col--4of12--medium txt--align-center">
+                <img src={introPhone} />
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        {/* <div className="isHidden isVisible--medium">
           <div className="wrapper vr--x3">
-            <hr />
+          
             <h1 className="txt--color-blue txt--align-center txt--weight-semibold">The world’s first key issue database and price guide available on your mobile device.</h1>
-            <hr />
+            <div className="intro--batgirl"></div>
             <div className="grid grid--centered">
               <div className="grid__col grid__col--8of12--medium">
 
@@ -61,7 +107,7 @@ class Intro extends Component {
           </div>
 
 
-        </div>
+        </div> */}
 
       </div>
     );

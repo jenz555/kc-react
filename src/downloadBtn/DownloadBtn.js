@@ -1,12 +1,49 @@
 import React, { Component } from 'react';
-import downloadButton from './download.png';
+import downloadButtonIos from './downloadAppStore.png';
+import downloadButtonGoogle from './downloadGoogle.png';
 
 class DownloadBtn extends Component {
   render() {
     return (
-       <div className="btn--download">
-           <img src={downloadButton} />
-           </div>
+      <div>
+      <div className="isHidden isVisible--medium">
+      <div className="flag btn--download">
+        <div className="flag__hd">
+          <a href="">
+          <img src={downloadButtonIos} />
+          </a>
+        </div>
+        <div className="flag__bd">
+        <a href="">
+          <img src={downloadButtonGoogle} />
+          </a>
+        </div>
+
+      </div>
+      </div>
+
+<div className="isHidden--medium">
+  <div className="grid grid--centered">
+
+  <div className="grid__col grid__col--6of12">
+  <a href="">
+          <img src={downloadButtonIos} />
+          </a>
+    </div>
+
+    <div className="grid__col grid__col--6of12">
+    <a href="">
+    <img src={downloadButtonGoogle} />
+          </a>
+    </div>
+
+    </div>
+
+
+  </div>
+
+  </div>
+
     );
   }
 }
