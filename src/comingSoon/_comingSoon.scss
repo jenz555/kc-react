@@ -2,9 +2,9 @@
     top: 0;
     left: 0;
     color: $white;
-    padding: 1rem;
+    padding: 0.2rem 0.4rem;
     @include basicGradient(top, $violet-1, bottom, $violet-2); //background: $violet-1;
-    width: 90%;
+    display: inline-block;
 }
 
 //----------------------------------------------------

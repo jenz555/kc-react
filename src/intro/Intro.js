@@ -31,6 +31,8 @@ class Intro extends Component {
                 
                 
                 <ComingSoon></ComingSoon>
+                {/* <i className="fa fa-bolt" aria-hidden="true"></i> */}
+            
                 {/* <DownloadBtn></DownloadBtn> */}
               </div>
             </div>
@@ -48,6 +50,7 @@ class Intro extends Component {
                 <h2 className="vr txt--align-center txt--align-center txt--weight-semibold txt--color-blue">Welcome to the origin of a better comic book collecting experience.</h2>
                 <h3 className="vr txt--intro  txt--align-center">The Key Collector Comic App has everything a comic book collector could ever want to build a legendary collection.</h3>
                 <ComingSoon></ComingSoon>
+      
                 {/* <DownloadBtn></DownloadBtn> */}
               </div>
               <div className="grid__col grid__col--4of12--medium txt--align-center">
