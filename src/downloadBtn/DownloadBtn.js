@@ -25,13 +25,13 @@ class DownloadBtn extends Component {
 <div className="isHidden--medium">
   <div className="grid grid--centered">
 
-  <div className="grid__col grid__col--6of12">
+  <div className="grid__col grid__col--5of12">
   <a href="">
           <img src={downloadButtonIos} />
           </a>
     </div>
 
-    <div className="grid__col grid__col--6of12">
+    <div className="grid__col grid__col--5of12">
     <a href="">
     <img src={downloadButtonGoogle} />
           </a>

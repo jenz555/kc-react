@@ -1,8 +1,7 @@
 
-
 .container {
     margin: 0 auto;
-    width: 100%;
+    width: 80%;
     color: #333;
 
   }
@@ -15,3 +14,14 @@
     color:$blue-6!important;
 
 }
+
+//----------------------------------------------------
+// Media Queries
+//----------------------------------------------------
+@media (max-width: $breakpoint-medium) {
+    .container {
+
+        width: 100%;
+    
+      }
+    }

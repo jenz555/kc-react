@@ -35,7 +35,7 @@
   cursor: default;
   opacity: 0.5; }
 
-@media (min-width: 48em) {
+@media (min-width: 769px) {
   .isHidden--medium {
     display: none; }
   .isVisible--medium,
@@ -325,7 +325,7 @@ img {
 button {
   cursor: pointer; }
 
-@media (max-width: 48em) {
+@media (max-width: 769px) {
   h1 {
     font-size: 1.7rem; }
   h2 {
@@ -363,7 +363,7 @@ button {
 .control__group > * + * {
   margin-top: 1.563rem; }
 
-@media (min-width: 48em) {
+@media (min-width: 769px) {
   .control__group > * {
     float: right; }
   .control__group > * {
@@ -512,7 +512,7 @@ button {
 .grid__col--push--11 {
   margin-left: 91.63%; }
 
-@media (min-width: 48em) {
+@media (min-width: 769px) {
   .grid__col {
     display: inline-block; }
   .grid--equalCols > * {
@@ -853,7 +853,7 @@ button {
   cursor: default;
   box-shadow: none; }
 
-@media (min-width: 48em) {
+@media (min-width: 769px) {
   .btn {
     display: inline-block;
     width: auto; }
@@ -1092,7 +1092,7 @@ div#month-wrap {
   width: 2.813rem;
   height: 2.813rem; }
 
-@media (min-width: 48em) {
+@media (min-width: 769px) {
   .icon--rect {
     width: 2.25rem;
     height: 1.438rem; } }
@@ -1919,7 +1919,7 @@ input.option__input[type=checkbox]:disabled:checked + input[type='hidden'] + .op
   .anchor--tooltip .tooltip--top:after {
     display: none; }
 
-@media (min-width: 48em) {
+@media (min-width: 769px) {
   .anchor.anchor--tooltip {
     position: relative; }
   .anchor--tooltip .tooltip,
@@ -2115,7 +2115,7 @@ input.option__input[type=checkbox]:disabled:checked + input[type='hidden'] + .op
   content: '';
   display: none; }
 
-@media (min-width: 48em) {
+@media (min-width: 769px) {
   .tooltip__content--toaster {
     left: auto;
     width: 350px; } }
@@ -2250,7 +2250,7 @@ input.option__input[type=checkbox]:disabled:checked + input[type='hidden'] + .op
     .c-toast__close:focus {
       outline: 0; }
 
-@media (min-width: 48em) {
+@media (min-width: 769px) {
   .c-toaster {
     left: auto;
     width: 17.5rem; } }
@@ -2477,7 +2477,7 @@ input.option__input[type=checkbox]:disabled:checked + input[type='hidden'] + .op
 .clickableOverlay--transparent {
   background-color: transparent; }
 
-@media (min-width: 48em) {
+@media (min-width: 769px) {
   .dialogModal {
     position: fixed;
     top: 20%;
@@ -2548,7 +2548,7 @@ input.option__input[type=checkbox]:disabled:checked + input[type='hidden'] + .op
 .message__bd {
   overflow: hidden; }
 
-@media (min-width: 48em) {
+@media (min-width: 769px) {
   .message {
     margin: 1.25rem 0; } }
 
@@ -2816,7 +2816,7 @@ svg:not(:root) {
   display: table-cell;
   vertical-align: middle; }
 
-@media (min-width: 48em) {
+@media (min-width: 769px) {
   .hList--toVList > * {
     display: block; }
   .hList--toVList > * + * {
@@ -2908,7 +2908,7 @@ svg:not(:root) {
 .vList--bottom > * {
   vertical-align: bottom; }
 
-@media (min-width: 48em) {
+@media (min-width: 769px) {
   .vList--toHList > * {
     display: inline-block; }
   .vList--toHList > * + * {
@@ -3078,7 +3078,7 @@ a:visited.nav__link {
 .nav--show {
   display: block; }
 
-@media (max-width: 48em) {
+@media (max-width: 769px) {
   .nav > * + * {
     border-top: 1px solid #ffffff; }
   .navMenu--vert {
@@ -3454,7 +3454,7 @@ this cell in mobile view*/
   content: attr(data-th);
   display: block; }
 
-@media (min-width: 48em) {
+@media (min-width: 769px) {
   .table--valignMiddle--medium td,
   .table--valignMiddle--medium th {
     vertical-align: middle; }

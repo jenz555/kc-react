@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor'
+import Top from '../top/Top'
 import sensory from './extraSensory_phone.png';
 import awareness from './awareness_phone.png';
 import timeTraveler from './timeTraveler_phone.png';
@@ -11,11 +12,12 @@ class ExploreApp extends Component {
         return (
             <ScrollableAnchor id={'section2'}>
 
-                <section className="vr">
-                    <div className="wrapper wrapper--x2 vr--x3">
-                        <h1 className="txt txt--weight-semibold vr txt--color-blue">Download the Key Collector Comics App and become a Superpowered Collector</h1>
+                <section className="vr--x5">
+                   <div className="wrapper">
+                    <h1 className="txt txt--weight-semibold explore__title txt--align-center vr txt--color-blue vr--x3">Download the Key Collector Comics App and become a Superpowered Collector</h1>
                     </div>
                     <div className="isHidden isVisible--medium">
+                 
 
                         <div className="slant slant--large slant--right slant--dkBlue">
 
@@ -163,7 +165,15 @@ class ExploreApp extends Component {
 
                         </div>
 
-                        <div className="slant slant--left slant--white">&nbsp;</div>
+                        <div className="slant--end--container">
+                        <div className="slant--end">
+                            <div className="wrapper">
+                                <Top></Top>
+                            </div>
+                          
+                        </div>
+                            
+                        </div>
 
                     </div>
 
@@ -277,7 +287,7 @@ class ExploreApp extends Component {
 
                         <div className="slant slant--right slant--dkBlue">
 
-                            <div className="wrapper wrapper--x2 vr--x2">
+                            <div className="wrapper wrapper--x2">
 
                                 <div className="grid grid--centered grid--middle">
                                     <div className="grid__col grid__col--8of12--medium">
