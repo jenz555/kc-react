@@ -30,10 +30,15 @@ class Carousel extends Component {
         <ScrollableAnchor id={'section1'}>
           <div className="wrapper wrapper--x2">
        <h2 className="txt txt--weight-semibold vr txt--color-blue">What is a Key Issue?</h2>
-        <div className="txt vr">Since 1934, over 1 million individual comic book issues have been published. Less than 1% of that number is considered a "key issue".
-
-One of the biggest problems facing collectors today is identifying and finding these highly sought after comics. Even expert collector's find it challenging to remember each and every key plus the pricing based on condition.</div>
-        <div className="container txt txt--size-12 txt--align-center">
+       <div className="isHidden isVisible--medium">
+        <div className="txt txt--size-18 vr">First appearances, early appearances, origin stories, iconic cover art, classic stories and many other categories could be considered a “key issue”. The truth is, it is up to each individual collector to determine what a key comic book is based on their own preferences. Key Collector Comics mobile app  offers a variety of different categories of key issues in order to be an effective sidekick for every collector. </div>
+        </div>
+        <div className="isHidden--medium vr">
+        <div className="container txt txt--size-14">
+        First appearances, early appearances, origin stories, iconic cover art, classic stories and many other categories could be considered a “key issue”. The truth is, it is up to each individual collector to determine what a key comic book is based on their own preferences. Key Collector Comics mobile app  offers a variety of different categories of key issues in order to be an effective sidekick for every collector. 
+          </div>
+       
+          </div>
        	<Slider {...settings}>
 
           <div><img src={robin}/><p className="txt txt--align-left">Death of Robin</p></div>
@@ -48,7 +53,7 @@ One of the biggest problems facing collectors today is identifying and finding t
           </Slider>
         </div>
 
-        </div>
+
         </ScrollableAnchor>
    
 

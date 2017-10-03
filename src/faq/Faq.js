@@ -11,7 +11,7 @@ const questions = [
   `I found a bug (a functionality issue with how the app operates) in the Key Collector Comics app. Where should I report it?`,
   `What's the best way to use Key Collector Comics mobile app?`,
   `I have a suggestion to improve the app - who do I tell?`,
-  `What is your definition of a "key issue"`,
+  `What is your definition of a "key issue"?`,
   `Would you like to know if the app is missing a key issue?`,
 ];
 const listItemsQuestions = questions.map((question) =>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import DownloadBtn from '.././downloadBtn/DownloadBtn';
+import circleLogo from './kc_circle_logo.png';
+import title from './kc_Title.svg';
 
 import ReactGA from 'react-ga';
 
@@ -38,7 +40,31 @@ class Footer extends Component {
 
         </section>
         <div className="wrapper">
-          <div className="txt--align-center">
+
+        <div className="grid grid--middle">
+        <div className="grid__col grid__col--6of12--medium txt--color-white">
+        <h3 className="txt--weight-semibold txt--color-purple">Download the Key Collector Comics App Today</h3>
+                  <h4 className="vr">Never let a key issue slip through your fingers again.</h4>
+                  
+                  <ul class="vList">
+                  <li  className="border--bottom vr"></li> 
+                    <li>FEEDBACK, INQUIRIES, SUGGESTIONS</li>
+                   
+                    <li>Nick Coglianese</li>
+                    <li>847.212.1833</li>
+                    <li><a href="mailto:nick@keycollectorcomics.com?subject=Key%20Collector%20Comics%20" className="txt txt--color-white">nick@keycollectorcomics.com</a></li>
+
+                          </ul>
+    
+            </div>
+
+            <div className="grid__col grid__col--6of12--medium">
+
+            <div className="txt--align-center">
+              <img src={circleLogo} alt="Key Collector Logo" className="footer__logo" />
+           
+
+
             <nav role="navigation" className="vr">
     
               <ul className="hList">
@@ -54,6 +80,13 @@ class Footer extends Component {
               </ul>
             </nav>
           </div>
+
+            </div>
+           
+            </div>
+
+
+        
         </div>
 
       </footer>

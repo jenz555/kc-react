@@ -1,12 +1,14 @@
 // The main container element
 .Collapsible {
     background-color: $white;
+    border-left: 1px solid $blue-2;
+    border-right: 1px solid $blue-2;
   }
   
 
   .Collapsible {
     &:last-child {
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid $blue-2;
     }
     
   }
@@ -14,7 +16,7 @@
   
   //The content within the collaspable area
   .Collapsible__contentInner {
-    padding: 0 1rem 0.5rem 0;
+    padding: 0.5rem 1rem 0.5rem 0.5rem;
     border: 1px solid $gray-1;
     border-top: 0;
   
@@ -36,12 +38,14 @@
     color: #ededed;
     position: relative;
     border: 1px solid white;
-    padding: 1rem 2rem 1rem 0;
+    padding: 1rem 2rem 1rem 0.5rem;
     /* background: #2a8df2; */
     color: darkblue;
+    background-color: rgba(	85, 200, 232, 0.1);
+
     font-size: 1.225rem;
     /* border-bottom: 1px solid #ccc; */
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $blue-2;
   
     &:after {
       font-family: 'FontAwesome';

@@ -2,7 +2,7 @@
     top: 0;
     left: 0;
     color: $white;
-    padding: 0.2rem 0.4rem;
+    padding: 0.2rem 0.6rem;
     @include basicGradient(top, $violet-1, bottom, $violet-2); //background: $violet-1;
     display: inline-block;
 }
@@ -16,26 +16,3 @@
         width: 100%;
     }
 }
-
-// .callout:before {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     height: 100%;
-//     width: 100%;
-//     background: $violet-1;
-//     -webkit-transform: skew(0deg, 1deg);
-//     -moz-transform: skew(0deg, 1deg);
-//     -ms-transform: skew(0deg, 1deg);
-//     -o-transform: skew(0deg, 1deg);
-//     transform: skew(0deg, 1deg);
-//   }
-//   .parallelogram {
-// 	width: 150px;
-// 	height: 100px;
-// 	-webkit-transform: skew(6deg);
-// 	   -moz-transform: skew(6deg);
-// 	     -o-transform: skew(6deg);
-// 	background: red;
-// }
