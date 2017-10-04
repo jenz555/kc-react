@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
+import DownloadBtn from '../downloadBtn/DownloadBtn';
 import ScrollableAnchor from 'react-scrollable-anchor'
 import Top from '../top/Top'
 import search from './searchScreen_phone.png';
-import logo from './logo_explore.png';
+import logo from './kcLogo.png';
 import awareness from './awareness2_phone.png';
 import timeTraveler from './timeTraveler2_phone.png';
 import playboy from './playboy_phone.png';
 
+import ReactGA from 'react-ga';
 
 class ExploreApp extends Component {
+    handleClickDownloadApp() {
+        ReactGA.event({
+          category: 'Explore App',
+          action: 'Download App',
+        });
+      }
     render() {
         return (
             <ScrollableAnchor id={'section2'}>
@@ -16,8 +24,14 @@ class ExploreApp extends Component {
                 <section className="vr--x5">
                     <div className="wrapper">
                         <h1 className="txt txt--weight-semibold explore__title txt--align-center txt--color-blue">Download the Key Collector Comics App and become a Superpowered Collector</h1>
-                        <p className="txt txt--size-18 vr--x3 txt--align-center ">Unlock the secret identity of over 7,000 key issues extracted from 8 decades of published comic books from the Golden Age to today.</p>
+                        <p className="txt txt--size-18 txt--align-center ">Unlock the secret identity of over 7,000 key issues extracted from 8 decades of published comic books from the Golden Age to today.</p>
+                        
+                <div className="vr--x3 txt--align-center">
+                <a href="https://itunes.apple.com/us/app/key-collector/id1189623811?ls=1&mt=8" target="_blank" rel="noopener noreferrer" onClick={() => { this.handleClickDownloadApp()}}>
 
+                        <DownloadBtn></DownloadBtn>
+                        </a>
+                        </div>
                     </div>
                     <div className="isHidden isVisible--medium">
 
@@ -97,10 +111,10 @@ class ExploreApp extends Component {
                                 <div className="grid grid--centered grid--middle">
                                     <div className="grid__col grid__col--8of12--medium slant__content-mb">
 
-                                    <h2 className="txt txt--color-white txt--weight-semibold txt--color-purple">Time Travel</h2>
+                                    <h2 className="txt txt--color-white txt--weight-semibold txt--color-purple vr">Time Travel</h2>
                                     <p className="txt txt--color-white">Teleport back to the Golden Age to see where the heroes of unshakeable virtue began their careers. Or witness moments in the Bronze and Copper eras where the lines that separated hero from villain began to blur leading to a darker, more realistic tone in comics. </p>
 
-                                    <p className="txt txt--color-white">The option is yours if you’d like to search within a specific time frame or browse the complete historical data of key issues by selecting one or more of the era filters</p>
+                                    <p className="txt txt--color-white">The option is yours if you’d like to search within a specific time frame or browse the complete historical data of key issues by selecting one or more of the era filters.</p>
 
                                     </div>
 
@@ -206,7 +220,7 @@ class ExploreApp extends Component {
 
 
 
-                                        <h2 className="txt txt--color-white txt--weight-semibold txt--color-purple">Superior Intellect</h2>
+                                        <h2 className="txt txt--color-white txt--weight-semibold txt--color-purple vr">Superior Intellect</h2>
                                         <p className="txt txt--color-white">In the time it takes to download an app, you can possess the full knowledge of which comics contain the milestone moments that make them “key issues”.</p>
                                         <p className="txt txt--color-white">There are two options to identify key issue comic books:</p>
                                         <ul className="oList txt--color-white">
@@ -240,7 +254,7 @@ class ExploreApp extends Component {
                                 <div className="grid grid--centered grid--middle">
                                     <div className="grid__col grid__col--8of12--medium">
 
-                                        <h2 className="txt txt--color-white txt--weight-semibold">Heightened Awareness</h2>
+                                        <h2 className="txt txt--color-white txt--weight-semibold vr">Heightened Awareness</h2>
                                         <p className="txt txt--color-white">The Key Collector Comics mobile app offers price guidance for each entry in the database to assist you in making confident purchases.</p>
 
                                         <p className="txt txt--color-white">Our 3-tiered pricing structure leaves the complicated grading scale to the experts. Before you buy, take a peek at the condition guidelines to determine the value of what you find and decide if you should engage or retreat. </p>
@@ -268,10 +282,10 @@ class ExploreApp extends Component {
 
                                 <div className="grid grid--centered grid--middle">
                                     <div className="grid__col grid__col--8of12--medium">
-                                        <h2 className="txt txt--color-white txt--weight-semibold txt--color-purple">Time Travel</h2>
+                                        <h2 className="txt txt--color-white txt--weight-semibold txt--color-purple vr">Time Travel</h2>
                                         <p className="txt txt--color-white">Teleport back to the Golden Age to see where the heroes of unshakeable virtue began their careers. Or witness moments in the Bronze and Copper eras where the lines that separated hero from villain began to blur leading to a darker, more realistic tone in comics. </p>
 
-                                        <p className="txt txt--color-white">The option is yours if you’d like to search within a specific time frame or browse the complete historical data of key issues by selecting one or more of the era filters</p>
+                                        <p className="txt txt--color-white">The option is yours if you’d like to search within a specific time frame or browse the complete historical data of key issues by selecting one or more of the era filters.</p>
 
                                     </div>
 
@@ -323,7 +337,7 @@ class ExploreApp extends Component {
 
                                 <div className="grid grid--centered grid--middle">
                                     <div className="grid__col grid__col--8of12--medium">
-                                        <h2 className="txt txt--color-white txt--weight-semibold">Superhuman Speed</h2>
+                                        <h2 className="txt txt--color-white txt--weight-semibold vr">Superhuman Speed</h2>
                                         <p className="txt txt--color-white">Our goal was to engineer a user-friendly interface that would deliver concise information in as few steps as possible and make it conveniently available when needed. The result should save you a considerable amount of time, money and frustration.</p>
                                         <p className="txt txt--color-white">We are confident that we succeeded in this first phase of Key Collector Comics but it is not important what we think. We want to hear from you. Please send us feedback via the app (tap “my account”) or by filling out the form below.</p>
 

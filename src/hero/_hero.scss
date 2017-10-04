@@ -1,7 +1,6 @@
 .hero {
     width: 100%; // height: 300px;
-    position: relative;
-    //@include radial-gradient($violet-1,$violet-2);
+    position: relative; //@include radial-gradient($violet-1,$violet-2);
     @include basicGradient(left, $blue-6, right, #03060f);
     background-color: #03060f; //background-image: url('./hero/appBackground_4.jpg');
     background-position-y: 46%;
@@ -18,9 +17,8 @@
     color: $violet-1;
 }
 
-
 .hero__content {
-    width: 67%;
+    width: 52%;
     z-index: $zIndex-3;
     top: 181%;
 }
@@ -37,7 +35,6 @@
     }
 }
 
-
 .heroManKey {
     img {
         max-width: none;
@@ -50,13 +47,12 @@
     position: absolute;
     left: -59.5%;
     top: -351.4%;
-
 }
 
 .heroManKey {
     position: absolute;
     opacity: 0;
-    left: -49.2px;
+    left: -20%;
     top: 346.6%;
     @include animation(fadeIn 2.0s forwards);
     @include keyframes(fadeIn) {
@@ -75,61 +71,93 @@
 .heroMan--small,
 .heroManKey--small {
     display: inline;
-
     img {
         width: 50%;
     }
 }
 
 .heroMan--small {
-
     img {
         margin-bottom: -6px;
     }
-
 }
-
 
 .heroManKey--small {
     position: absolute;
     width: 43.3%;
-    left: 29.4%;
+    left: 28.4%;
     top: 37.4%;
 }
 
 // ----------------------------------------------------
 // Media Queries
 // ----------------------------------------------------
-@media (max-width: 925px) {
-
+@media (max-width: 1044px) {
     .heroManKey {
-        left: -10.4px;
-        top: 318.3%;
+        left: -47.4px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .heroManKey {
+        left: -41.4px
+    }
+}
+
+@media (max-width: 950px) {
+    .heroManKey {
+        left: -33.4px;
+    }
+}
+
+@media (max-width: 900px) {
+    .heroManKey {
+        left: -25px;
+    }
+}
+
+@media (max-width: 850px) {
+    .heroManKey {
+        left: -19px;
+    }
+}
+
+@media (max-width: 830px) {
+    .heroManKey {
+        left: -18px;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .heroManKey {
+        left: -14px;
+    }
+}
+
+@media (max-width: 780px) {
+    .heroManKey {
+        left: -10px;
     }
 }
 
 // ----------------------------------------------------
 // Media Queries
 // ----------------------------------------------------
-@media (max-width: 825px) {
-
-}
+@media (max-width: 825px) {}
 
 // ----------------------------------------------------
 // Media Queries
 // ----------------------------------------------------
-@media (max-width: 770px) {
-
-}
+@media (max-width: 770px) {}
 
 // ----------------------------------------------------
 // Media Queries
 // ----------------------------------------------------
-@media screen and (max-width: $breakpoint-medium)  {
+@media screen and (max-width: $breakpoint-medium) {
     .hero--tablet {
         height: 100%;
         @include basicGradient(left, $blue-6, right, #03060f);
-        
     }
     .heroMan__container {
         text-align: center;

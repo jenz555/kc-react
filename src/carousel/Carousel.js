@@ -41,15 +41,15 @@ class Carousel extends Component {
           </div>
        	<Slider {...settings}>
 
-          <div><img src={robin}/><p className="txt txt--align-left">Death of Robin</p></div>
-          <div><img src={braniac}/><p className="txt txt--align-left">Recalled Cover</p></div>
-          <div><img src={catman}/><p className="txt txt--align-left">WWII Cover</p></div>
-          <div><img src={crimeStory}/><p className="txt txt--align-left">Pre-Censorship</p></div>
-          <div><img src={deadpool}/><p className="txt txt--align-left">First Deadpool</p></div>
-          <div><img src={silverSurfer}/><p className="txt txt--align-left">Iconic Cover</p></div>
-          <div><img src={artistComic}/><p className="txt txt--align-left">Celebrated Artist</p></div>
-          <div><img src={batManGreenArrow}/><p className="txt txt--align-left">New Costume</p></div>
-          <div><img src={suspense}/><p className="txt txt--align-left">Drug Issue</p></div>
+          <div><img src={robin} alt="Death of Robin Comic Cover"/><p className="txt txt--align-left">Death of Robin</p></div>
+          <div><img src={braniac} alt="Recalled Cover"/><p className="txt txt--align-left">Recalled Cover</p></div>
+          <div><img src={catman} alt="World War II Cover"/><p className="txt txt--align-left">WWII Cover</p></div>
+          <div><img src={crimeStory} alt="Pre-Censorship Cover"/><p className="txt txt--align-left">Pre-Censorship</p></div>
+          <div><img src={deadpool} alt="First Deadpool Issue Cover"/><p className="txt txt--align-left">First Deadpool</p></div>
+          <div><img src={silverSurfer} alt="Iconic Cover"/><p className="txt txt--align-left">Iconic Cover</p></div>
+          <div><img src={artistComic} alt="Celebrated Artis"/><p className="txt txt--align-left">Celebrated Artist</p></div>
+          <div><img src={batManGreenArrow} alt="New Costume Introduced"/><p className="txt txt--align-left">New Costume</p></div>
+          <div><img src={suspense} alt="Drug Issue"/><p className="txt txt--align-left">Drug Issue</p></div>
           </Slider>
         </div>
 

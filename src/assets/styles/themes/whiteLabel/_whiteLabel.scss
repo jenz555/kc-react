@@ -16,10 +16,7 @@
 @import "base/elements";
 @import "base/fonts";
 
-//----------------------------------------------------
-// Landmarks
-//----------------------------------------------------
-@import "landmarks/page";
+
 
 //----------------------------------------------------
 // Layout
@@ -35,30 +32,30 @@
 
 @import "content/anchor";
 @import "content/btn";
-@import "content/calendar";
-@import "content/datepicker";
+//@import "content/calendar";
+//@import "content/datepicker";
 @import "content/icon";
 @import "content/img";
 @import "content/input";
 @import "content/label";
 @import "content/option";
 @import "content/select";
-@import "content/timepicker";
-@import "content/toggleButtons";
-@import "content/tooltip";
+//@import "content/timepicker";
+//@import "content/toggleButtons";
+//@import "content/tooltip";
 @import "content/txt";
-@import "content/avatar";
-@import "content/toast";
+//@import "content/avatar";
+//@import "content/toast";
 
 //----------------------------------------------------
 // Containers
 //----------------------------------------------------
 
-@import "containers/accordion";
+//@import "containers/accordion";
 @import "containers/box";
-@import "containers/card";
-@import "containers/dialog";
-@import "containers/message";
+//@import "containers/card";
+//@import "containers/dialog";
+////@import "containers/message";
 @import "containers/wrapper";
 @import "containers/loader";
 
@@ -89,10 +86,10 @@
 // Modules
 //----------------------------------------------------
 
-@import "modules/affix";
+//@import "modules/affix";
 @import "modules/flag";
-@import "modules/hint";
-@import "modules/media";
+//@import "modules/hint";
+//@import "modules/media";
 @import "modules/table";
-@import "modules/tab";
-@import 'modules/progress-bar';
+//@import "modules/tab";
+//@import 'modules/progress-bar';

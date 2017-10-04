@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './header/Header';
 import Hero from './hero/Hero';
 import Intro from './intro/Intro';
+import DownloadBtn from './downloadBtn/DownloadBtn';
 import Carousel from './carousel/Carousel';
 import ExploreApp from './exploreApp/ExploreApp';
 import Faq from './faq/Faq';
@@ -11,7 +12,8 @@ import Footer from './footer/Footer';
 import './App.css';
 
 import ReactGA from 'react-ga';
-ReactGA.initialize('UA-106838773-1');
+
+
 
 class App extends Component {
 
@@ -22,7 +24,15 @@ class App extends Component {
     this.state = {
       someData: null,
     };
+
+
+    ReactGA.initialize('UA-106909493-1');
+ 
+    ReactGA.pageview(window.location.pathname);
   }
+  
+
+  
   render() {
 
   
@@ -31,6 +41,7 @@ class App extends Component {
       <Header></Header>
         <Hero></Hero>
         <Intro></Intro>
+
         <hr/>
         {/* <Nav></Nav> */}
         <Carousel></Carousel>

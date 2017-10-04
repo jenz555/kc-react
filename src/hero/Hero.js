@@ -26,7 +26,7 @@ class Hero extends Component {
                     <img src={heroMan} className="animated slideInRight" />
                   </div>
                   <div className="heroManKey">
-                    <img src={heroManKey} className="animated" />
+                    <img src={heroManKey} className="animated" alt="Key Collector Logo"/>
                   </div>
                 </div>
               </div>
@@ -57,7 +57,7 @@ class Hero extends Component {
                   <img src={heroMan} className="animated fadeIn" />
                 </div>
                 <div className="heroManKey--small">
-                  <img src={heroManKey} className="animated fadeIn" />
+                  <img src={heroManKey} className="animated fadeIn" alt="Key Collector Logo"/>
                 </div>
               </div>
           </div>

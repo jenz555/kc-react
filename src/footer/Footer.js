@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import DownloadBtn from '.././downloadBtn/DownloadBtn';
-import circleLogo from './kc_circle_logo.png';
-import title from './kc_Title.svg';
+import circleLogo from './kcLogo_noTitle.png';
+
 
 import ReactGA from 'react-ga';
 
@@ -28,6 +28,15 @@ class Footer extends Component {
       action: 'Facebook',
     });
   }
+
+  handleClickDownloadApp() {
+    ReactGA.event({
+      category: 'Footer',
+      action: 'Download App',
+    });
+  }
+
+  
   render() {
     return (
       <footer className="page__footer box box--blue">
@@ -45,8 +54,10 @@ class Footer extends Component {
         <div className="grid__col grid__col--6of12--medium txt--color-white">
         <h3 className="txt--weight-semibold txt--color-purple">Download the Key Collector Comics App Today</h3>
                   <h4 className="vr">Never let a key issue slip through your fingers again.</h4>
-                  
-                  <ul class="vList">
+                  <a href="https://itunes.apple.com/us/app/key-collector/id1189623811?ls=1&mt=8" target="_blank" rel="noopener noreferrer" onClick={() => { this.handleClickDownloadApp()}}>
+                   <DownloadBtn></DownloadBtn> 
+                   </a>
+                  <ul className="vList vList--tight">
                   <li  className="border--bottom vr"></li> 
                     <li>FEEDBACK, INQUIRIES, SUGGESTIONS</li>
                    
@@ -68,13 +79,13 @@ class Footer extends Component {
             <nav role="navigation" className="vr">
     
               <ul className="hList">
-              <a href="https://www.instagram.com/keycollectorcomics/" target="_blank" onClick={() => { this.handleClickInsta() }}>
+              <a href="https://www.instagram.com/keycollectorcomics/" target="_blank" rel="noopener noreferrer" onClick={() => { this.handleClickInsta() }}>
                 <li className="fa fa-instagram fa-inverse fa-3x"></li>
                 </a>
-                <a href="https://twitter.com/key_collect" target="_blank" onClick={() => { this.handleClickTwitter() }}>
+                <a href="https://twitter.com/key_collect" target="_blank" rel="noopener noreferrer" onClick={() => { this.handleClickTwitter() }}>
                 <li className="fa fa-twitter  fa-inverse fa-3x"></li>
                 </a>
-                <a href="https://www.facebook.com/keycollector/" target="_blank" onClick={() => { this.handleClickFC() }}>
+                <a href="https://www.facebook.com/keycollector/" target="_blank" rel="noopener noreferrer" onClick={() => { this.handleClickFC() }}>
                 <li className="fa fa-facebook fa-inverse fa-3x"></li>
                 </a>
               </ul>

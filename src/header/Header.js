@@ -77,13 +77,13 @@ class Header extends React.Component {
             <div className="flag__hd">
 
             <ul className="hList">
-            <a href="https://www.instagram.com/keycollectorcomics/" target="_blank" onClick={() => { this.handleClickInsta() }}>
+            <a href="https://www.instagram.com/keycollectorcomics/" target="_blank" rel="noopener noreferrer" onClick={() => { this.handleClickInsta() }}>
               <li className="fa fa-instagram fa-inverse fa-2x"></li>
               </a>
-              <a href="https://twitter.com/key_collect" target="_blank" onClick={() => { this.handleClickTwitter() }}>
+              <a href="https://twitter.com/key_collect" target="_blank" rel="noopener noreferrer" onClick={() => { this.handleClickTwitter() }}>
               <li className="fa fa-twitter fa-inverse fa-2x"></li>
               </a>
-              <a href="https://www.facebook.com/keycollector/" target="_blank" onClick={() => { this.handleClickFC() }}>
+              <a href="https://www.facebook.com/keycollector/" target="_blank" rel="noopener noreferrer" onClick={() => { this.handleClickFC() }}>
               <li className="fa fa-facebook fa-inverse fa-2x"></li>
               </a>
             </ul>
