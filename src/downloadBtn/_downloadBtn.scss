@@ -3,9 +3,18 @@
     img {
         max-width: none;
         height: auto;
-        width: 200px;
+        height: 75px;
     }
 }
+
+.btn--download-small {
+    
+     img {
+         max-width: none;
+
+         width: 200px;
+     }
+ }
 
 //----------------------------------------------------
 // Media Queries

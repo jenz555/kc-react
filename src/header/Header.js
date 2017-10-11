@@ -1,9 +1,10 @@
 import React from 'react'
 import ScrollableAnchor from 'react-scrollable-anchor'
-
+import OutboundLinkTwitter from '../outboundLinkTwitter/OutboundLinkTwitter'
 import { findDOMNode } from 'react-dom';
 import $ from 'jquery';
 import ReactGA from 'react-ga';
+import { OutboundLink } from 'react-ga';
 
 
 class Header extends React.Component {
@@ -80,9 +81,9 @@ class Header extends React.Component {
             <a href="https://www.instagram.com/keycollectorcomics/" target="_blank" rel="noopener noreferrer" onClick={() => { this.handleClickInsta() }}>
               <li className="fa fa-instagram fa-inverse fa-2x"></li>
               </a>
-              <a href="https://twitter.com/key_collect" target="_blank" rel="noopener noreferrer" onClick={() => { this.handleClickTwitter() }}>
+             <OutboundLinkTwitter>
               <li className="fa fa-twitter fa-inverse fa-2x"></li>
-              </a>
+             </OutboundLinkTwitter>
               <a href="https://www.facebook.com/keycollector/" target="_blank" rel="noopener noreferrer" onClick={() => { this.handleClickFC() }}>
               <li className="fa fa-facebook fa-inverse fa-2x"></li>
               </a>

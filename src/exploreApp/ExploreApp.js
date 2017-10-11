@@ -8,15 +8,9 @@ import awareness from './awareness2_phone.png';
 import timeTraveler from './timeTraveler2_phone.png';
 import playboy from './playboy_phone.png';
 
-import ReactGA from 'react-ga';
 
 class ExploreApp extends Component {
-    handleClickDownloadApp() {
-        ReactGA.event({
-          category: 'Explore App',
-          action: 'Download App',
-        });
-      }
+
     render() {
         return (
             <ScrollableAnchor id={'section2'}>
@@ -25,12 +19,22 @@ class ExploreApp extends Component {
                     <div className="wrapper">
                         <h1 className="txt txt--weight-semibold explore__title txt--align-center txt--color-blue">Download the Key Collector Comics App and become a Superpowered Collector</h1>
                         <p className="txt txt--size-18 txt--align-center ">Unlock the secret identity of over 7,000 key issues extracted from 8 decades of published comic books from the Golden Age to today.</p>
-                        
-                <div className="vr--x3 txt--align-center">
-                <a href="https://itunes.apple.com/us/app/key-collector/id1189623811?ls=1&mt=8" target="_blank" rel="noopener noreferrer" onClick={() => { this.handleClickDownloadApp()}}>
 
-                        <DownloadBtn></DownloadBtn>
-                        </a>
+                        <div className="vr--x3 txt--align-center">
+              
+
+                                <div className="grid grid--centered">
+                                    <div className="grid__col grid__col--12of12">
+
+                                        <div className="grid grid--centered">
+                                            <div className="grid__col grid__col--6of12">
+                                                <DownloadBtn></DownloadBtn>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                    
                         </div>
                     </div>
                     <div className="isHidden isVisible--medium">
@@ -50,9 +54,9 @@ class ExploreApp extends Component {
                                         <ul className="oList txt--color-white">
                                             <li>Search by Title to discover which key issues exist within a series without having to perform an individual search for each comic.</li>
                                             <li>Search by Character to see a timeline of your favorite hero or villain from 1st appearance to where they are today, living or dead, and the character defining moments in between.</li>
-                                         
 
-                                            </ul>
+
+                                        </ul>
 
 
                                     </div>
@@ -111,10 +115,10 @@ class ExploreApp extends Component {
                                 <div className="grid grid--centered grid--middle">
                                     <div className="grid__col grid__col--8of12--medium slant__content-mb">
 
-                                    <h2 className="txt txt--color-white txt--weight-semibold txt--color-purple vr">Time Travel</h2>
-                                    <p className="txt txt--color-white">Teleport back to the Golden Age to see where the heroes of unshakeable virtue began their careers. Or witness moments in the Bronze and Copper eras where the lines that separated hero from villain began to blur leading to a darker, more realistic tone in comics. </p>
+                                        <h2 className="txt txt--color-white txt--weight-semibold txt--color-purple vr">Time Travel</h2>
+                                        <p className="txt txt--color-white">Teleport back to the Golden Age to see where the heroes of unshakeable virtue began their careers. Or witness moments in the Bronze and Copper eras where the lines that separated hero from villain began to blur leading to a darker, more realistic tone in comics. </p>
 
-                                    <p className="txt txt--color-white">The option is yours if you’d like to search within a specific time frame or browse the complete historical data of key issues by selecting one or more of the era filters.</p>
+                                        <p className="txt txt--color-white">The option is yours if you’d like to search within a specific time frame or browse the complete historical data of key issues by selecting one or more of the era filters.</p>
 
                                     </div>
 
@@ -226,9 +230,9 @@ class ExploreApp extends Component {
                                         <ul className="oList txt--color-white">
                                             <li>Search by Title to discover which key issues exist within a series without having to perform an individual search for each comic.</li>
                                             <li>Search by Character to see a timeline of your favorite hero or villain from 1st appearance to where they are today, living or dead, and the character defining moments in between.</li>
-                                         
 
-                                            </ul>
+
+                                        </ul>
 
 
 
@@ -309,12 +313,12 @@ class ExploreApp extends Component {
 
                                 <div className="grid grid--centered grid--middle">
                                     <div className="grid__col grid__col--8of12--medium">
-                                    <h2 className="txt txt--color-white txt--weight-semibold vr">Billionaire Playboy</h2>
-                                    <p className="txt txt--color-white">Amassing wealth comparable to Bruce Wayne or Tony Stark is an exaggeration and most definitely not the intention of the Key Collector Comics mobile app.  But the ability to mingle a hobby with investment potential is a win-win in our (comic) book.</p>
+                                        <h2 className="txt txt--color-white txt--weight-semibold vr">Billionaire Playboy</h2>
+                                        <p className="txt txt--color-white">Amassing wealth comparable to Bruce Wayne or Tony Stark is an exaggeration and most definitely not the intention of the Key Collector Comics mobile app.  But the ability to mingle a hobby with investment potential is a win-win in our (comic) book.</p>
 
-                                    <p className="txt txt--color-white">Start by cataloguing your collection. Tap the “own” button beside an issue you possess.  From the “My Keyring” screen you can view your inventory and monitor the fluctuating value of your collection</p>
+                                        <p className="txt txt--color-white">Start by cataloguing your collection. Tap the “own” button beside an issue you possess.  From the “My Keyring” screen you can view your inventory and monitor the fluctuating value of your collection</p>
 
-                                    <p className="txt txt--color-white">In the “My Keyring” screen you can also build a wishlist of what you’d like to add to your collection. So when the time is right, access your wishlist so you won’t forget what to look for that might be waiting for you to find.</p>
+                                        <p className="txt txt--color-white">In the “My Keyring” screen you can also build a wishlist of what you’d like to add to your collection. So when the time is right, access your wishlist so you won’t forget what to look for that might be waiting for you to find.</p>
 
                                     </div>
 

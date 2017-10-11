@@ -29,12 +29,7 @@ class Footer extends Component {
     });
   }
 
-  handleClickDownloadApp() {
-    ReactGA.event({
-      category: 'Footer',
-      action: 'Download App',
-    });
-  }
+
 
   
   render() {
@@ -54,9 +49,8 @@ class Footer extends Component {
         <div className="grid__col grid__col--6of12--medium txt--color-white">
         <h3 className="txt--weight-semibold txt--color-purple">Download the Key Collector Comics App Today</h3>
                   <h4 className="vr">Never let a key issue slip through your fingers again.</h4>
-                  <a href="https://itunes.apple.com/us/app/key-collector/id1189623811?ls=1&mt=8" target="_blank" rel="noopener noreferrer" onClick={() => { this.handleClickDownloadApp()}}>
                    <DownloadBtn></DownloadBtn> 
-                   </a>
+                  
                   <ul className="vList vList--tight">
                   <li  className="border--bottom vr"></li> 
                     <li>FEEDBACK, INQUIRIES, SUGGESTIONS</li>

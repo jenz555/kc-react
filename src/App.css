@@ -4836,6 +4836,10 @@ this cell in mobile view*/
 .btn--download img {
   max-width: none;
   height: auto;
+  height: 75px; }
+
+.btn--download-small img {
+  max-width: none;
   width: 200px; }
 
 @media (max-width: 769px) {

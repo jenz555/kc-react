@@ -9,9 +9,11 @@ import Faq from './faq/Faq';
 import Contact from './contact/Contact';
 import Top from './top/Top';
 import Footer from './footer/Footer';
+import OutboundLinkTwitter from './outboundLinkTwitter/OutboundLinkTwitter';
 import './App.css';
 
 import ReactGA from 'react-ga';
+import { OutboundLink } from 'react-ga';
 
 
 
